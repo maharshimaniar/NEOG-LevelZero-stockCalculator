@@ -5,19 +5,35 @@
   box-sizing: border-box;
 }
 
-:root {
-  --primary-color: #00F0FF;
-  --secondary-color: rgb(43, 43, 43);
-}
-
 body {
-  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  background-image: url(./images/background.svg);
+  background-attachment: fixed;
   text-align: center;
-  background-color: black;
+  max-width: 800px;
 }
 
-main{
+:root {
+  --primary-color: #00f0ff;
+  --black: #333333;
+  --secondary-color: rgb(43, 43, 43);
+  --text-color: #bfbfbf;
+}
+
+.header {
+  margin: 10px;
+  padding: 20px;
+  color: var(--primary);
+  background-color: var(--secondary);
+  border-bottom-right-radius: 20px;
   background-color: var(--secondary-color);
+}
+
+
+
+main {
   max-width: 700px;
   min-width: min-content;
   margin: auto;
@@ -26,10 +42,9 @@ main{
   border-radius: 10px;
 }
 
-h1{
-  color:var(--primary-color)
+h1 {
+  color: var(--primary-color)
 }
-
 
 a {
   text-decoration: none;
@@ -51,13 +66,12 @@ header h1 {
   font-size: larger;
   margin: 2rem 0px;
   font-weight: 600;
-  color: white
+  color: var(--primary-color)
 }
 
 .input {
   font-size: larger;
   display: block;
-  outline: #fff;
   padding: 0.6rem 1rem;
   margin: 1rem auto;
   border: 2px solid var(--primary-color);
@@ -65,7 +79,8 @@ header h1 {
   width: 100%;
   max-width: 325px;
   text-align: center;
-  
+  background-color: var(--secondary-color);
+  color: var(--text-color)
 }
 
 .btn-check {
@@ -84,36 +99,40 @@ header h1 {
 .output {
   font-size: x-large;
   font-weight: 600;
-  margin: 2rem 0;
-  color:white
+  color: var(--primary-color);
+  margin: auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  margin-top: 50px;
+  border-radius: 10px;
+  width: max-content;
 }
 
-.profit{
-  color:rgb(0, 255, 0);
+.profit {
+  color: rgb(0, 255, 0);
   font-weight: bold;
   font-style: italic;
-  font-size:larger;
+  font-size: larger;
   background-color: rgb(80, 80, 80);
   padding: 10px;
   border-radius: 10px;
 }
 
-.loss{
-  color:rgb(252, 31, 31);
+.loss {
+  color: rgb(252, 31, 31);
   font-weight: bold;
   font-style: italic;
-  font-size:larger;
+  font-size: larger;
   background-color: rgb(80, 80, 80);
   padding: 10px;
   border-radius: 10px;
-
 }
 
-.stable{
-  color:white;
+.stable {
+  color: white;
   font-weight: bold;
   font-style: italic;
-  font-size:larger;
+  font-size: larger;
   background-color: rgb(80, 80, 80);
   padding: 10px;
   border-radius: 10px;
