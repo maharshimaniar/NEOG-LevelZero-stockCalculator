@@ -25,14 +25,14 @@ function calculateProfitAndLoss(initial, quantity, current) {
     var lossPercentage = (loss / initial) * 100;
 
     showOutput(
-      `Hey, the <span class="loss">Loss</span> is <span class="loss">₹ ${loss}</span> and the Percent is <span class="loss">${lossPercentage} %</span>`
+      `Hey, the <span class="loss">Loss</span> is <span class="loss">₹ ${loss.toFixed(3)}</span> and the Percent is <span class="loss">${lossPercentage.toFixed(3)} %</span>`
     );
   } else if (current > initial) {
     var profit = (current - initial) * quantity;
     var profitPercentage = (profit / initial) * 100;
 
     showOutput(
-      `Hey, the <span class="profit">Profit</span> is <span class="profit">₹ ${profit}</span> and the Percent is <span class="profit">${profitPercentage} %</span>`
+      `Hey, the <span class="profit">Profit</span> is <span class="profit">₹ ${profit.toFixed(3)}</span> and the Percent is <span class="profit">${profitPercentage.toFixed(3)} %</span>`
     );
   } else {
     showOutput(`<span class="stable">No pain no gain and no gain no pain</span>`);
